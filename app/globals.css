@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gold { color: #DAA520; }
+  .bg-gold { background-color: #DAA520; }
+  .border-gold { border-color: #DAA520; }
+}
+
+body::before {
+  content: "";
+  @apply fixed inset-0 -z-10 opacity-10;
+  background-image: radial-gradient(#DAA520 1px, transparent 1px);
+  background-size: 40px 40px;
+}
